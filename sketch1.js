@@ -9,3 +9,8 @@ function draw() {
   circle(20, 30, 100);
   text("gughi porco dio", width / 2, height / 2);
 }
+
+function mouseClicked() {
+  console.log("ciao");
+  window.location.href = "index2.html";
+}
