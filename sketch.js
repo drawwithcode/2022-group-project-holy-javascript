@@ -7,5 +7,5 @@ function draw() {
   // put drawing code here
   fill(0);
   circle(20, 30, 100);
-  text("peddi porco dio", width / 2, height / 2);
+  text("gughi porco dio", width / 2, height / 2);
 }
