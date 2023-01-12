@@ -1,9 +1,13 @@
+var mic;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  mic = new p5.AudioIn();
+  mic.start
   // put setup code here
 }
 
 function draw() {
   // put drawing code here
-  square(20, 20, 20);
+  var vol = mic.getlevel()
 }
