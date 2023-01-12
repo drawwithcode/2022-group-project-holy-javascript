@@ -6,11 +6,10 @@ function setup() {
 function draw() {
   // put drawing code here
   fill(0);
-   textAlign(CENTER)
+  textAlign(CENTER);
   text("Code your voice", width / 2, height / 2);
 }
 
 function mouseClicked() {
-  
   window.location.href = "index2.html";
 }

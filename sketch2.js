@@ -14,6 +14,7 @@ function setup() {
   canvass.mousePressed(userStartAudio);
   mic = new p5.AudioIn();
   mic.start();
+  textAlign(CENTER);
 }
 
 function draw() {
@@ -40,7 +41,8 @@ function draw() {
   newmicLevelA = map(micLevel, 0, 1, 0, 255);
   newmicLevelB = map(micLevel, 0, 1, 0, 0);
   newmicLevelC = map(micLevel, 0, 1, 255, 0);
-  text(nfc(newmicLevelA, 4), 10, 30);
+  textSize(100);
+  text(nfc(newmicLevelA, 4), width / 2, height / 5);
 
   rectColorValueA = newmicLevelA;
   rectColorValueB = newmicLevelB;
