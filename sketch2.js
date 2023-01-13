@@ -5,9 +5,17 @@ let rectColorValueC;
 
 let displayVolume;
 
+function getAccel(){
+  DeviceMotionEvent.requestPermission().then(response => {
+      if (response == 'granted') {
+          console.log("accelerometer permission granted");
+      }
+  });
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(14);
+  frameRate(60);
   fft = new p5.FFT();
   // put setup code here
   let canvass = createCanvas(windowWidth, windowHeight);
@@ -16,6 +24,7 @@ function setup() {
   mic.start();
   textAlign(CENTER);
 }
+
 
 function draw() {
   background(255);

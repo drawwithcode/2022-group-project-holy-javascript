@@ -5,10 +5,13 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  fill(0);
+  fill(0); 
+  
   textAlign(CENTER);
+  textSize (10)
   text("Code your voice", width / 2, height / 2);
-  text("Click to start", width / 2, height / 1.8);
+  
+  text("Click for explanation", width / 2, height / 1.8);
 }
 
 function mouseClicked() {

@@ -6,8 +6,8 @@ function setup() {
 function draw() {
   // put drawing code here
   background(255);
-  stroke(0, 0, 0);
-  strokeWeight(1);
+ 
+  
   // divide screen in 3
   line(0, height / 3, width, height / 3);
   line(0, height / 1.5, width, height / 1.5);
@@ -18,11 +18,12 @@ function draw() {
 
   fill(0);
   textAlign(CENTER);
-  text("How the computer makes it comprenseble to humans", width / 2, height / 2);
+  text("How the computer makes it visually comprensible", width / 2, height / 2);
+  text("Click to start", width / 2, height / 1.8);
 
   fill(0);
   textAlign(CENTER);
-  text("", width / 2, height / 1.2);
+  text("The volume translated in colour", width / 2, height / 1.2);
 }
 
 function mouseClicked() {
