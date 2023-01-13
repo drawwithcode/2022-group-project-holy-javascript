@@ -3,8 +3,11 @@ let rectColorValueA;
 let rectColorValueB;
 let rectColorValueC;
 
+let displayVolume;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  frameRate(14);
   // put setup code here
   let canvass = createCanvas(windowWidth, windowHeight);
   canvass.mousePressed(userStartAudio);
@@ -30,7 +33,11 @@ function draw() {
   newmicLevelB = map(micLevel, 0, 1, 0, 0);
   newmicLevelC = map(micLevel, 0, 1, 255, 0);
   textSize(100);
-  text(nfc(newmicLevelA, 4), width / 2, height / 5);
+
+  displayVolume = map(newmicLevelA, 0, 255, 0, 100);
+  displayVolume -= 1;
+  displayVolume = Math.abs(displayVolume);
+  text(nfc(displayVolume, 0), width / 2, height / 5);
 
   // parte 2
   let x = height - micLevel * height;
