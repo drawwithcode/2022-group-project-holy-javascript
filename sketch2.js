@@ -1,8 +1,4 @@
 let mic;
-var volhistory = [];
-let binaryX = 0;
-let binaryY = 0;
-let rectColor = [];
 let rectColorValueA;
 let rectColorValueB;
 let rectColorValueC;
