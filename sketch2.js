@@ -8,6 +8,7 @@ let displayVolume;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(14);
+  fft = new p5.FFT();
   // put setup code here
   let canvass = createCanvas(windowWidth, windowHeight);
   canvass.mousePressed(userStartAudio);
@@ -18,17 +19,18 @@ function setup() {
 
 function draw() {
   background(255);
-  stroke(0, 255, 0);
-  strokeWeight(1);
 
   //avvia microfono
   micLevel = mic.getLevel();
 
-  // divide screen in 3
-  line(0, height / 3, width, height / 3);
-  line(0, height / 1.5, width, height / 1.5);
+  // // divide screen in 3
+
+  // line(0, height / 3, width, height / 3);
+  // line(0, height / 1.5, width, height / 1.5);
 
   //parte 1
+  push();
+  stroke(255);
   newmicLevelA = map(micLevel, 0, 1, 0, 255);
   newmicLevelB = map(micLevel, 0, 1, 0, 0);
   newmicLevelC = map(micLevel, 0, 1, 255, 0);
@@ -38,12 +40,20 @@ function draw() {
   displayVolume -= 1;
   displayVolume = Math.abs(displayVolume);
   text(nfc(displayVolume, 0), width / 2, height / 5);
+  pop();
 
   // parte 2
-  let x = height - micLevel * height;
-  ellipse(x, height / 2, 10, 10);
+  push();
+  fill(0);
+
+  rect(0, height / 1.5, width, height / 3);
+  fill(255);
+  ellipse(width / 2, height / 2, width, displayVolume);
+  pop();
 
   //parte 3
+  push();
+
   rectColorValueA = newmicLevelA;
   rectColorValueB = newmicLevelB;
   rectColorValueC = newmicLevelC;
@@ -54,4 +64,5 @@ function draw() {
   console.log(rectColorValueA);
   console.log(rectColorValueB);
   console.log(rectColorValueC);
+  pop();
 }
