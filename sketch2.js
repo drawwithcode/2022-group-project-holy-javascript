@@ -40,7 +40,8 @@ function draw() {
 
   //parte 1
   push();
-  stroke(255);
+  // stroke(255);
+  fill(0)
   newmicLevelA = map(micLevel, 0, 1, 0, 255);
   newmicLevelB = map(micLevel, 0, 1, 0, 0);
   newmicLevelC = map(micLevel, 0, 1, 255, 0);
@@ -82,7 +83,7 @@ function draw() {
   }
   endShape();
 
-  //parte 3
+  // parte 3
   push();
 
   rectColorValueA = newmicLevelA;
