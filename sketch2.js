@@ -2,6 +2,10 @@ let mic;
 let rectColorValueA;
 let rectColorValueB;
 let rectColorValueC;
+let ypos = 1;
+let ystep = 100;
+let xpos = 1;
+let xstep = 100;
 
 let displayVolume;
 
@@ -15,7 +19,7 @@ function getAccel(){
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(60);
+  frameRate(120);
   fft = new p5.FFT();
 
   let canvass = createCanvas(windowWidth, windowHeight);
@@ -45,13 +49,24 @@ function draw() {
   newmicLevelA = map(micLevel, 0, 1, 0, 255);
   newmicLevelB = map(micLevel, 0, 1, 0, 0);
   newmicLevelC = map(micLevel, 0, 1, 255, 0);
-  textSize(100);
-
+  
   displayVolume = map(newmicLevelA, 0, 255, 0, 100);
   displayVolume -= 1;
   displayVolume = Math.abs(displayVolume);
+  
+  
+    textSize(100);
   text(nfc(displayVolume, 0), width / 2, height / 5);
+
+  // for (let j = 0; j < height/3; j++) {
+  //   for (let i = 0; i < width; i++) {
+  //     text(nfc(displayVolume, 2), xpos+(xstep*i), ypos+(ystep*j));
+      
+  //   }
+  // }
   pop();
+  
+  
 
   // parte 2
   push();
@@ -62,26 +77,26 @@ function draw() {
   ellipse(width / 2, height / 2, width, displayVolume);
   pop();
 
-  //WAVEFORM
-  let spectrum = fft.analyze();
-  noStroke();
-  fill(255, 0, 255);
-  for (let i = 0; i < spectrum.length; i++) {
-    let x = map(i, 0, spectrum.length, 0, width);
-    let h = -height + map(spectrum[i], 0, 255, height, 0);
-    rect(x, height, width / spectrum.length, h);
-  }
+  // //WAVEFORM
+  // let spectrum = fft.analyze();
+  // noStroke();
+  // fill(255, 0, 255);
+  // for (let i = 0; i < spectrum.length; i++) {
+  //   let x = map(i, 0, spectrum.length, 0, width);
+  //   let h = -height + map(spectrum[i], 0, 255, height, 0);
+  //   rect(x, height, width / spectrum.length, h);
+  // }
 
-  let waveform = fft.waveform();
-  noFill();
-  beginShape();
-  stroke(20);
-  for (let i = 0; i < waveform.length; i++) {
-    let x = map(i, 0, waveform.length, 0, width);
-    let y = map(waveform[i], -1, 1, 0, height);
-    vertex(x, y);
-  }
-  endShape();
+  // let waveform = fft.waveform();
+  // noFill();
+  // beginShape();
+  // stroke(20);
+  // for (let i = 0; i < waveform.length; i++) {
+  //   let x = map(i, 0, waveform.length, 0, width);
+  //   let y = map(waveform[i], -1, 1, 0, height);
+  //   vertex(x, y);
+  // }
+  // endShape();
 
   // parte 3
   push();
@@ -93,8 +108,8 @@ function draw() {
   fill(rectColorValueA, rectColorValueB, rectColorValueC);
   rect(0, height / 1.5, width, height / 1.5);
 
-  console.log(rectColorValueA);
-  console.log(rectColorValueB);
-  console.log(rectColorValueC);
+  
   pop();
+
+  
 }
