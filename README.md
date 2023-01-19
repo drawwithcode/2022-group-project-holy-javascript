@@ -1,3 +1,2 @@
-Holy Javascript
+![Untitled-1-01](https://user-images.githubusercontent.com/102153316/213498660-7cba2b38-16d4-47e5-98b7-f7f39d9fc58b.jpg)
 
-This project wants to show the hidden technology of computers dealing with human voice and translating it into something comprensible for humans and kids
