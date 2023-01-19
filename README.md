@@ -49,7 +49,7 @@ One of the main coding steps was to actually show a number which is constantly c
   with volhistory being the miclevel value. But this wasn't enough. Eventually we found out about nfc, which takes a number value and continuosly changes it into a string:
   
   ```js
-    displayVolume = map(newmicLevelA, 0, 255, 0, 100);
+  displayVolume = map(newmicLevelA, 0, 255, 0, 100);  
   displayVolume -= 1;
   displayVolume = Math.abs(displayVolume);
   displayVolume += 1;
