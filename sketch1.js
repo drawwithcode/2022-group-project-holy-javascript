@@ -8,14 +8,14 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  frameRate(1);
 
   textAlign(CENTER);
 }
 
 function draw() {
+  background(255);
   fill(0);
-
-  text("ciao", 20, 20);
 
   //responsive text
   if (windowWidth < 400) {
@@ -31,7 +31,7 @@ function draw() {
       (width * 3) / 5
     );
   } else if (windowWidth > 400) {
-    textSize(80);
+    textSize(150);
     textFont(myFont);
     text("VOLUME", width / 2, height / 2 - height / 11);
     textSize(30);
@@ -43,6 +43,10 @@ function draw() {
       (width * 3) / 5
     );
   }
+  push();
+  fill("blue");
+  text("CLICK ANYWHERE", random(width), random(height));
+  pop();
 }
 
 function mouseClicked() {

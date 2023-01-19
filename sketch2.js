@@ -41,19 +41,19 @@ function draw() {
     textSize(30);
     fill(0);
     textAlign(CENTER);
-    text("How the computer perceives your voice", width / 2, height / 6);
+    text("VOLUME IS A NUMBER FOR THE MACHINE", width / 2, height / 6);
+
+    fill(0);
+    textAlign(CENTER);
+    text("VOLUME IS MORE LUCID TO HUMANS AS A SHAPE", width / 2, height / 2);
 
     fill(0);
     textAlign(CENTER);
     text(
-      "How the computer makes it visually comprensible",
+      "VOLUME IS EVEN MORE LUCID TO HUMANS AS A COLOUR",
       width / 2,
-      height / 2
+      height / 1.2
     );
-
-    fill(0);
-    textAlign(CENTER);
-    text("The volume translated in colour", width / 2, height / 1.2);
   }
   push();
   fill("blue");
