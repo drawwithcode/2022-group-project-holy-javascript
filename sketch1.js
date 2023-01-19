@@ -1,29 +1,50 @@
+let myFont;
+let myFontitalic;
+
+function preload() {
+  myFont = loadFont("assets/nimbus.ttf");
+  myFontitalic = loadFont("assets/nimbusitalic.ttf");
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // put setup code here
+
+  textAlign(CENTER);
 }
 
 function draw() {
-  // put drawing code here
-  fill(0); 
-  
+  fill(0);
+
+  text("ciao", 20, 20);
+
   //responsive text
-  if(windowWidth< 400){
-  textAlign(CENTER);
-  textSize (15)
-  text("Code your voice", width / 2, height / 2);
-  
-  text("Click for explanation", width / 2, height / 1.8);
-  }
-  else if(windowWidth> 400){
-    textAlign(CENTER);
-  textSize (30)
-  text("Code your voice", width / 2, height / 2);
-  
-  text("Click for explanation", width / 2, height / 1.8);
+  if (windowWidth < 400) {
+    textSize(80);
+    textFont(myFont);
+    text("VOLUME", width / 2, height / 2 - height / 11);
+    textSize(10);
+    textFont(myFontitalic);
+    text(
+      "Volume refers to the variation of the sound measured in decibels. It can also be defined as the audio level to determine the loudness of the sound. The term can be used technically for instruments and instruments such as radio, television and other things.",
+      width / 2 - width / 3.5,
+      height / 2,
+      (width * 3) / 5
+    );
+  } else if (windowWidth > 400) {
+    textSize(80);
+    textFont(myFont);
+    text("VOLUME", width / 2, height / 2 - height / 11);
+    textSize(30);
+    textFont(myFontitalic);
+    text(
+      "<<Volume refers to the variation of the sound measured in decibels. It can also be defined as the audio level to determine the loudness of the sound. The term can be used technically for instruments and instruments such as radio, television and other things.>>",
+      width / 2 - width / 3.5,
+      height / 2,
+      (width * 3) / 5
+    );
   }
 }
 
 function mouseClicked() {
-  window.location.href = "index3.html";
+  window.location.href = "index2.html";
 }
