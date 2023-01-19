@@ -81,7 +81,7 @@ One of the main coding steps was to actually show a number which is constantly c
   
   ### Tools and libraries
   
-  Our main weapon, aside from p5js, was github desktop. It allowed us to collaborate on multiple laptops in a really fast and easy way. Also, the p5 sound library was really important, allowing us to use the microphone input. Lastly, ngrok's localtunnel made testing really fast. We made a large use of The coding train lessons on youtube.
+  Our main tool aside from p5js was github desktop. It allowed us to collaborate on multiple laptops in a really fast and easy way. Also, the p5 sound library was really important, allowing us to use the microphone input. Lastly, ngrok's localtunnel made testing really fast. We made a large use of The coding train lessons on youtube.
   
   ### Inspiration
   
