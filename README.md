@@ -16,7 +16,7 @@ The user can see a visual translation of audio volume into a shape and colour re
 ### Speculative fantasy and Safe space
 
 Our project is designed in order to be understandable by humans. By the way, it speculates on some possible and futurible (but not scientifically proven) ways of translating the concept of volume. It aims to speculate, in order to linger on the  machines which we use, and on their inner calculations.
-Additionally, our project gives the freedom of screaming to the user. Indeed, in order to reach the red color,the user needs to scream or make a lot of noise (depending on the microphone sensitivity). If this project was to be set in a public space, that public space (museum, a square in a city, a bar) would give the freedom and safety to scream and to make noise, which is a liberating act for the human being.
+Additionally, our project gives the freedom of screaming to the user. Indeed, in order to reach the red color,the user needs to scream or make a lot of noise (depending on the microphone sensitivity). If this project was to be set in a public space, that public space (a museum, a square in a city, a bar) would give the freedom and safety to scream and to make noise, which is a liberating act for the human being, or to be quiet, or everything in between.
 
 ![cucu](https://user-images.githubusercontent.com/102153316/213518280-4b846f5d-5e54-4ebe-bf17-207ef9440158.jpg)
 
