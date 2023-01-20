@@ -2,10 +2,10 @@
 
 ### Team
 
-* [Gustavo Cambareri]
-* [Luca Pedroni]
-* [Anastasiia Zaiarniuk]
-* [Mona Abolghasemi]
+* Gustavo Cambareri
+* Luca Pedroni
+* Anastasiia Zaiarniuk
+* Mona Abolghasemi
 
 ### Project idea
 
