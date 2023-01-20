@@ -83,7 +83,7 @@ One of the main coding steps was to actually show the numeric value of the micro
   
   ### Tools and libraries
   
-  Our main tool aside from p5js was github desktop. It allowed us to collaborate on multiple laptops in a really fast and easy way. Also, the p5 sound library was really important, allowing us to use the microphone input. Lastly, ngrok's localtunnel made testing really fast. 
+  Our main tool aside from p5js was github desktop. It allowed us to collaborate on multiple laptops in a really fast and easy way. Also, the p5 is needed to run the sketch, allowing the user to use the microphone input. Lastly, ngrok's localtunnel made testing really fast. 
   Also, we made a large use of The coding train lessons on youtube by Daniel Shiffman. 
   
   ### Inspiration
