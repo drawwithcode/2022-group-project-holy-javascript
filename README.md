@@ -88,7 +88,7 @@ One of the main coding steps was to actually show the numeric value of the micro
   
   ### Inspiration
   
-  On the concept of speculation, we were inspired by contemporary artists like Trevor Paglen and his "Autonomy Cube", Adam Harvey and the "Anti-Face", and formally by Ryoji Ikeda. 
+  On the concept of speculation, we were inspired by contemporary artists like Trevor Paglen and his "Autonomy Cube" or Adam Harvey and the "Anti-Face".
   
   ### Faculty
 
